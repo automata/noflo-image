@@ -1,7 +1,7 @@
 {
   "name": "noflo-image",
   "description": "Image processing utilities for browser and Node.js NoFlo.",
-  "version": "0.0.19",
+  "version": "0.0.18",
   "author": {
     "name": "Forrest Oliphant",
     "email": "forrest@sembiki.com"
@@ -65,6 +65,7 @@
       "GetHistogram": "components/GetHistogram.coffee",
       "GetOrientation": "components/GetOrientation.coffee",
       "GetPresetCurve": "components/GetPresetCurve.coffee",
+      "GetSaliency": "components/GetSaliency-node.coffee",
       "ImageToCanvas": "components/ImageToCanvas.coffee",
       "Measure": "components/Measure-node.coffee",
       "ToFullscale": "components/ToFullscale.coffee",
