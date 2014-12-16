@@ -27,11 +27,9 @@ compute = (canvas, callback) ->
       tmpFile.unlink()
 
 onEnd = (filePath, callback) ->
-  # We should link gmr-saliency/bin/saliency to /usr/local/bin/saliency
-  # e.g. on caliper
-  baseDir = '/usr/local/bin'
+  saliencyBin = 'node_modules/.bin/saliency'
 
-  exec baseDir + '/saliency ' + filePath, (err, stdout, stderr) ->
+  exec saliencyBin + ' ' + filePath, (err, stdout, stderr) ->
     if err
       callback err
     else
